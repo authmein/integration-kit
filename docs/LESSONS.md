@@ -1,6 +1,6 @@
 # Pelajaran proses dari integrasi authmein pertama
 
-Aturan teknis ada di `ATURAN.md`. Berkas ini memuat kesalahan cara kerja yang paling mahal, supaya integrasi berikutnya tidak mengulanginya.
+Aturan teknis ada di `RULES.md`. Berkas ini memuat kesalahan cara kerja yang paling mahal, supaya integrasi berikutnya tidak mengulanginya.
 
 ## 1. Tiruan hanya sebaik pengamatan di baliknya
 Tiruan IdP pertama memberi `state` pada redirect gerbang MFA, sehingga semua tes hijau sementara produksi gagal ("Login tidak valid"). Tiruan yang

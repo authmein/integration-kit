@@ -10,9 +10,9 @@ Diturunkan dari integrasi nyata aplikasi Go pertama; setiap aturan mencatat alas
 
 | Jalur | Fungsi |
 |---|---|
-| `docs/ATURAN.md` | Aturan teknis yang wajib (A–F), alasan, bukti, dan tes yang menjaganya |
-| `docs/PANDUAN.md` | Urutan kerja tahap 0–6, dari keputusan sampai produksi |
-| `docs/PELAJARAN.md` | Kesalahan cara kerja yang paling mahal dan cara menghindarinya |
+| `docs/RULES.md` | Aturan teknis yang wajib (A–F), alasan, bukti, dan tes yang menjaganya |
+| `docs/GUIDE.md` | Urutan kerja tahap 0–6, dari keputusan sampai produksi |
+| `docs/LESSONS.md` | Kesalahan cara kerja yang paling mahal dan cara menghindarinya |
 | `authmeinclient/` | Klien login: Authorization Code + PKCE, cookie alur, gerbang MFA, mulai ulang kode 401, verifikasi `id_token` |
 | `authmeintest/` | Tiruan authmein (OIDC, klien publik, kode sekali pakai, gerbang MFA, kode 401) untuk tes dan `cmd/fakeauthmein` |
 | `examples/minimal/` | Aplikasi lengkap terkecil di atas klien (allowlist, sesi, keluar) |
@@ -35,14 +35,14 @@ scripts/smoke.sh http://127.0.0.1:8080
 
 ## Memakai di aplikasi
 
-1. Baca `docs/PANDUAN.md` dan `docs/ATURAN.md`.
+1. Baca `docs/GUIDE.md` dan `docs/RULES.md`.
 2. Salin `authmeinclient/` (dan `authmeintest/` untuk tes) ke aplikasi, atau impor modul `github.com/authmein/integration-kit`. Catat versinya.
 3. Hubungkan `Hooks.OnLogin` ke penyimpanan pengguna dan sesi aplikasi (`examples/minimal` sebagai bentuk).
 4. Daftarkan client lewat pengelola authmein dengan `templates/data-pendaftaran.md`.
 5. Jalankan tes, mutasi, uji asap, uji nyata, sesuai panduan.
 
 Aplikasi bukan Go: aturan, urutan callback, perilaku tiruan, dan `scripts/smoke.sh` tidak bergantung bahasa. Porting = mengulang daftar tes di
-`docs/PANDUAN.md` tahap 3.
+`docs/GUIDE.md` tahap 3.
 
 ## Yang bukan cakupan kit ini
 - Service account (M2M, `client_credentials`), SPA tanpa backend, aplikasi mobile: aturannya berbeda (lihat paket integrasi dari pengelola authmein).
@@ -51,7 +51,7 @@ Aplikasi bukan Go: aturan, urutan callback, perilaku tiruan, dan `scripts/smoke.
 
 ## Menjaga kit tetap jujur
 Tiruan hanya sebaik pengamatan di belakangnya. Bila layanan asli berperilaku berbeda dari `authmeintest`: ubah tiruan (tandai [OBS]), tulis tes yang
-gagal pada kode lama, baru perbaiki `authmeinclient`. Setiap perubahan `authmeinclient` diverifikasi ulang dengan mutasi (`docs/PELAJARAN.md` 2).
+gagal pada kode lama, baru perbaiki `authmeinclient`. Setiap perubahan `authmeinclient` diverifikasi ulang dengan mutasi (`docs/LESSONS.md` 2).
 
 ## Lisensi
 MIT (lihat `LICENSE`).

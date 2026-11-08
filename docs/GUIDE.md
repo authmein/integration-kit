@@ -1,7 +1,7 @@
 # Panduan: mengintegrasikan aplikasi dengan authmein
 
-Urutan kerja dari keputusan sampai produksi, dengan templat yang dipakai di tiap tahap. Aturan teknisnya: `ATURAN.md` (kode A1 dst. dirujuk di sini).
-Pelajaran proses: `PELAJARAN.md`. Berlaku untuk aplikasi web dengan backend yang login lewat `https://auth.me.in` sebagai client `dynamic` publik.
+Urutan kerja dari keputusan sampai produksi, dengan templat yang dipakai di tiap tahap. Aturan teknisnya: `RULES.md` (kode A1 dst. dirujuk di sini).
+Pelajaran proses: `LESSONS.md`. Berlaku untuk aplikasi web dengan backend yang login lewat `https://auth.me.in` sebagai client `dynamic` publik.
 
 ## Gambaran
 
@@ -12,7 +12,7 @@ keputusan -> data pendaftaran -> client dev/beta -> kode + tes dengan tiruan -> 
 
 Prinsip yang menentukan urutan ini:
 1. **Tiruan dulu, nyata kemudian.** Hampir semua perilaku dibuktikan terhadap `authmeintest` secara otomatis; uji nyata hanya menutup yang tidak bisa ditiru.
-2. **Kode tidak dipercaya sebelum tesnya terbukti gagal pada logika lama** (mutasi, lihat `PELAJARAN.md` 2).
+2. **Kode tidak dipercaya sebelum tesnya terbukti gagal pada logika lama** (mutasi, lihat `LESSONS.md` 2).
 3. **Setiap langkah yang mengubah dunia luar** (mendaftarkan client, membuka hostname, mengisi rahasia produksi, deploy) membutuhkan persetujuan pemilik secara eksplisit.
 4. **Bukti, bukan klaim.** Centang hanya dengan perintah dan keluaran ringkas (tanpa rahasia).
 

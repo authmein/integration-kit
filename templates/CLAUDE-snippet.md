@@ -1,4 +1,4 @@
-<!-- Tempel bagian ini ke CLAUDE.md aplikasi, lalu isi <...>. Sumber aturan teknis: integration-kit/docs/ATURAN.md -->
+<!-- Tempel bagian ini ke CLAUDE.md aplikasi, lalu isi <...>. Sumber aturan teknis: integration-kit/docs/RULES.md -->
 
 ## Login = authmein (auth.me.in)
 

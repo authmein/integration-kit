@@ -5,13 +5,13 @@ status: open
 ---
 # Todo integrasi authmein: <aplikasi>
 
-Panduan: `integration-kit/docs/PANDUAN.md`. Aturan: `integration-kit/docs/ATURAN.md`. Centang `[x]` hanya dengan bukti (perintah + keluaran
+Panduan: `integration-kit/docs/GUIDE.md`. Aturan: `integration-kit/docs/RULES.md`. Centang `[x]` hanya dengan bukti (perintah + keluaran
 ringkas, tanpa rahasia) di bagian Bukti. Tanda 🔒 = butuh persetujuan pemilik/pengelola sebelum dikerjakan.
 
 ## 0. Keputusan
 - [ ] Siapa yang boleh masuk dan bagaimana (allowlist undangan / peran): ______
 - [ ] Login lama (jika ada) dihapus atau berdampingan? Migrasi pengguna? ______
-- [ ] Butuh login sosial? (di luar auth.me.in tidak tersedia secara bawaan; lihat ATURAN A15)
+- [ ] Butuh login sosial? (di luar auth.me.in tidak tersedia secara bawaan; lihat RULES.md A15)
 - [ ] Alamat publik dev/beta/prod final: ______
 
 ## 1. Pendaftaran client (satu per environment)
