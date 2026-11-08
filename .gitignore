@@ -1,0 +1,9 @@
+# Go build caches written by tools/go.sh
+.gocache/
+.gomodcache/
+# secrets: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
