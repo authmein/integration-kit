@@ -54,4 +54,4 @@ Tiruan hanya sebaik pengamatan di belakangnya. Bila layanan asli berperilaku ber
 gagal pada kode lama, baru perbaiki `authmeinclient`. Setiap perubahan `authmeinclient` diverifikasi ulang dengan mutasi (`docs/PELAJARAN.md` 2).
 
 ## Lisensi
-Belum ditetapkan. Tentukan sebelum repo dipublikasikan.
+MIT (lihat `LICENSE`).
